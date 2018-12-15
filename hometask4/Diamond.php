@@ -1,5 +1,5 @@
 <?php
-$i = 6;
+$i = +$argv[1];
 $n = $i - 1;
 
 $outputTreePart = function ($step) use ($n) {
