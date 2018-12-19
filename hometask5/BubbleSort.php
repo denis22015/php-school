@@ -1,6 +1,6 @@
 <?php
 
-function bubbleSort(&$a) {
+function bubbleSort(array &$a) {
   $arrLen = count($a);
 
   for($i = 0; $i < $arrLen - 2; $i++) {
