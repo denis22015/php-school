@@ -48,7 +48,21 @@ for ($i = 0; $i < $studCount; $i++) {
     $studentObjects[$i] = new Student($students[$i]);
 }
 
+// use of __get
+// for task 4
+echo 'Student names are' . PHP_EOL;
 for ($i = 0; $i < $studCount; $i++) {
-    $studentObjects[$i]->showMySelf();
+    echo $studentObjects[$i]->fullname . PHP_EOL;
+}
+
+// for task 4
+$studentObjects[1]->status = 'junior';
+echo 'now ' . $studentObjects[1]->fullname . ' become a junior' .PHP_EOL;
+
+
+for ($i = 0; $i < $studCount; $i++) {
+//    $studentObjects[$i]->showMySelf();
+
+    echo $studentObjects[$i];
 }
 

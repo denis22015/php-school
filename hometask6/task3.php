@@ -6,9 +6,9 @@ echo 'task3' . PHP_EOL;
 
 for ($i = 0; $i < $studCount; $i++) {
     $studyTime = $studentsStudyTimes[$i];
-    $studentObjects[$i]->studyTime($studyTime);
+    $studentObjects[$i]->gpa = $studyTime;
 }
 
 for ($i = 0; $i < $studCount; $i++) {
-    $studentObjects[$i]->showMySelf();
+    echo $studentObjects[$i];
 }
