@@ -36,6 +36,7 @@ class Student
         return null;
     }
 
+//     for task 4
     public function __set($name, $value)
     {
         switch ($name) {
@@ -53,17 +54,17 @@ class Student
         }
     }
 
-//    moved to __toString in task 4
-//    public function showMySelf() {
-//        echo PHP_EOL;
-//        echo 'firstName='.$this->firstName . PHP_EOL;
-//        echo 'lastName='.$this->lastName . PHP_EOL;
-//        echo 'gender='.$this->gender . PHP_EOL;
-//        echo 'status='.$this->status . PHP_EOL;
-//        echo 'gpa='.$this->gpa . PHP_EOL;
-//        echo PHP_EOL;
-//    }
+    public function showMySelf() {
+        echo PHP_EOL;
+        echo 'firstName='.$this->firstName . PHP_EOL;
+        echo 'lastName='.$this->lastName . PHP_EOL;
+        echo 'gender='.$this->gender . PHP_EOL;
+        echo 'status='.$this->status . PHP_EOL;
+        echo 'gpa='.$this->gpa . PHP_EOL;
+        echo PHP_EOL;
+    }
 
+//    copy of showMySelf for task 4
     public function __toString() {
         return PHP_EOL . 'firstName='.$this->firstName . PHP_EOL .
         'lastName=' . $this->lastName . PHP_EOL .
@@ -73,8 +74,8 @@ class Student
     }
 
 //    moved to set gpa in task 4
-//    public function studyTime($studyTime) {
-//        $newGpa = $this->gpa + log($studyTime);
-//        $this->gpa = $newGpa <= 4.0 ? $newGpa : 4.0;
-//    }
+    public function studyTime($studyTime) {
+        $newGpa = $this->gpa + log($studyTime);
+        $this->gpa = $newGpa <= 4.0 ? $newGpa : 4.0;
+    }
 }
